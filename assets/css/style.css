@@ -56,6 +56,11 @@ footer {
   font-weight: 400;
 }
 
+.annotation {
+  border: 1px solid #dedede;
+  padding: 5px;
+}
+
 #map > g > path {
   stroke: #fff;
   stroke-width: .5;
