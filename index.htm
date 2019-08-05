@@ -120,7 +120,7 @@
    <div class="row">
      <footer>
        <div class="col-md-12">
-        <p>The dataset is from the New York Taxi Trip Duraion on <a href="https://www.kaggle.com/c/nyc-taxi-trip-duration/data">kaggle</a>. The dataset is based on the <a href="https://cloud.google.com/bigquery/public-data/nyc-tlc-trips">2016 NYC Yellow Cab trip record data</a> made available in Big Query on Google Cloud Platform. The data was originally published by the <a href="http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml">NYC Taxi and Limousine Commission (TLC)</a>.</p>
+        <p>The dataset is from the New York Taxi Trip Duration on <a href="https://www.kaggle.com/c/nyc-taxi-trip-duration/data">kaggle</a>. The dataset is based on the <a href="https://cloud.google.com/bigquery/public-data/nyc-tlc-trips">2016 NYC Yellow Cab trip record data</a> made available in Big Query on Google Cloud Platform. The data was originally published by the <a href="http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml">NYC Taxi and Limousine Commission (TLC)</a>.</p>
        </div>
      </footer>
    </div>
@@ -418,8 +418,6 @@
          $('#day-selector').on("change", function() {
            var selDay = parseInt($(this).val());
            var newData = hourlyAverages.filter(function(val) { return val.dow === selDay });
-
-           chart3.selectAll("rect").remove();
 
            var rects3 = chart3.selectAll("rect").data(newData);
            rects3.enter()
